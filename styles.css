@@ -1,3 +1,130 @@
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #2d67ad;
+    color: aliceblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar_text {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Style for each table cell */
+td {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.board {
+    gap: 10px;
+    background-color: #003563;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.cell {
+    width: 60px;
+    height: 60px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #bab8b8;
+}
+
+.cell.win {
+    cursor: not-allowed;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+.cell.grey {
+    background-color: grey;
+}
+
+.header {
+    text-align: center;
+    margin: 0 0;
+    text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar {
+    height: 70vh;
+    background-color: rgba(143, 143, 143, 0.5);
+    margin: 15px;
+    padding: 15px;
+    margin-right: 40px;
+    width: 150px;
+    box-shadow: 10px 10px 8px rgba(251, 241, 241, 0.5);
+    border-radius: 10px;
+}
+
+#reset {
+    /* reset button */
+    background-color: #f44336;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#reset:hover {
+    background-color: #bf3d34;
+    color: white;
+}
+
+.sidebar * {
+    margin: 0 0;
+}
+
+.font {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 80px;
 }
